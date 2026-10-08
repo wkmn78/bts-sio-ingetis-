@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3b2528;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+/* ------------------------------
+   TITRE
+------------------------------ */
+
+header {
+    background-color: #542d31;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 2px solid #714146;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* ------------------------------
+   CONTENEUR PRINCIPAL
+------------------------------ */
+
+.conteneur {
+    width: 92%;
+    max-width: 1200px;
+    margin: 35px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+
+/* ------------------------------
+   CARTES
+------------------------------ */
+
+.carte {
+    background-color: #75484b;
+    border: 2px solid #8c6063;
+    border-radius: 15px;
+
+    padding: 20px;
+
+    min-height: 370px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.carte h2 {
+    background-color: #6b3d40;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    padding: 12px;
+
+    margin-bottom: 25px;
+
+    border-radius: 8px;
+}
+
+.carte p {
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+/* ------------------------------
+   IMAGE DE PAUL POGBA
+------------------------------ */
+
+.centrale {
+    text-align: center;
+}
+
+.centrale img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    border: 3px solid #8f6669;
+}
+
+
+/* ------------------------------
+   BOUTON RETOUR
+------------------------------ */
+
+.retour {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.retour a {
+    display: inline-block;
+
+    background-color: #75484b;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 25px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+.retour a:hover {
+    background-color: #986064;
+}
+
+
+/* ------------------------------
+   VERSION TELEPHONE
+------------------------------ */
+
+@media screen and (max-width: 900px) {
+
+    .conteneur {
+        grid-template-columns: 1fr;
+    }
+
+    .carte {
+        min-height: auto;
+    }
