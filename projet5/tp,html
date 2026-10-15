@@ -1,0 +1,14 @@
+html<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+    <a href="form_voiture.html">formulaire voiture</a>
+    <a href="client.html">formulaire client</a>
+    <a href="presentation.html">formulaire presentation</a>
+
+</body>
+</html>
