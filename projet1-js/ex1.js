@@ -98,4 +98,40 @@ function direBonjour() {
     "Somme : " + Somme +
     " | Moyenne : " + moyenne.toFixed(2) + "/20";
     }
+    function verif_age() {
+        let n1 = prompt("Donnez votre âge :");
+        
+        if (n1 === null || n1.trim() === "") {
+        document.getElementById("message").textContent =
+        "Vous n'avez pas renseigné votre âge.";
+        return;
+        }
+        
+        let age = Number(n1);
+        
+        if (age < 18) {
+        document.getElementById("message").textContent =
+        "Vous êtes mineur.";
+        document.body.style.backgroundColor = "red";
+        } else {
+        document.getElementById("message").textContent =
+        "Vous êtes majeur.";
+        document.body.style.backgroundColor = "green";
+        }
+        }
+        
+function calculerNotes() {
+    let n1 = Number(prompt("Donnez la première note :"));
+    let n2 = Number(prompt("Donnez la deuxième note :"));
+    let n3 = Number(prompt("Donnez la troisième note :"));
     
+    let Somme = n1 + n2 + n3;
+    let moyenne = Somme / 3;
+    
+    document.getElementById("message").textContent =
+    "Somme : " + Somme +
+    " | Moyenne : " + moyenne.toFixed(2) + "/20";
+    }
+        
+    
+
